@@ -58,3 +58,11 @@ set shiftwidth  =4
 set expandtab
 set relativenumber
 map <F5> :!vagrant provision<CR>
+let NERDTreeShowHidden=1
+
+
+augroup XML
+    autocmd!
+    autocmd FileType xml setlocal foldmethod=indent foldlevelstart=999 foldminlines=0
+augroup END
+
